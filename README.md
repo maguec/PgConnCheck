@@ -10,7 +10,6 @@ Options can be passed via the command line or via environment variables.
 
 ```bash
 pgconncheck -h 
-```
 
   -pgdb string
         [PGDB] Database name (default "test")
@@ -20,8 +19,11 @@ pgconncheck -h
         [PGPASSWORD] Database password (default "PgConn")
   -pgport int
         [PGPORT] Database master port (default 5432)
+  -pgsleep int
+        [PGSLEEP] Time to sleep between checks (default 100)
   -pguser string
         [PGUSER] Database user (default "postgres")
+```
 
 ### Testing
 
@@ -38,4 +40,3 @@ Then kill and restart the container.
 2024/06/10 14:58:54 Error: driver: bad connection postgres://postgres:XXXXX@localhost:5432/test
 2024/06/10 14:58:56 Connected to postgres://postgres:XXXXX@localhost:5432/test
 ```
-
