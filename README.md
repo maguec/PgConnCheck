@@ -20,7 +20,7 @@ pgconncheck -h
   -pgport int
         [PGPORT] Database master port (default 5432)
   -pgsleep int
-        [PGSLEEP] Time to sleep between checks (default 100)
+        [PGSLEEP] Time to sleep between checks in ms (default 100)
   -pguser string
         [PGUSER] Database user (default "postgres")
 ```

@@ -18,7 +18,7 @@ func main() {
 		pgdb       = flag.String("pgdb", "", "Database name")
 		pguser     = flag.String("pguser", "postgres", "Database user")
 		pgport     = flag.Int("pgport", 5432, "Database master port")
-		pgsleep     = flag.Int("pgsleep", 100, "Time to sleep between checks")
+		pgsleep     = flag.Int("pgsleep", 100, "Time to sleep between checks in ms")
 	)
 	if err := envflag.Parse(); err != nil {
 		panic(err)
